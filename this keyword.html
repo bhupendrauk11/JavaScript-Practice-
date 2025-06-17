@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var address= {
+            company:"Briarinteractive.in",
+            city:"Noida",
+            state:"UP",
+            fulladdress:function(){
+                return this.company+""+this.city+""+this.state;         
+            }
+        }
+        var fetch=address.fulladdress;
+        document.writeln(fetch);
+    </script>
+</body>
+</html>

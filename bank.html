@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("Welcome TO PNB Bank");
+        opin=2233;
+        bal=20000;
+        opt=parseInt(prompt("Select Option\n 1. Withdraw\n 2.Deposit\n 3.Change Pin"));
+        if(opt==1)
+        {
+            alert("________________Withdrow");
+
+            pin=parseInt(prompt("Enter Pin"));
+            if(pin==2233){
+            amt=parseInt(prompt("Enter Amount"));
+            if(amt<bal){
+                bal=bal-amt;
+                alert("WITHDROW SUCCESFULL");
+                document.write(" <hr>WITHDRAW AMT = ",amt);
+                document.write("<hr>Available Amt = ",bal);
+        }
+        else{
+            document.write("INSUFFICIENT BALANCE");
+    }}
+
+    else{
+        document.write("INVALID PIN");
+    }
+}
+            
+        
+    </script>
+</body>
+</html>

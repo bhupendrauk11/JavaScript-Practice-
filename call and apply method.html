@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var empaddress = {
+            fullAddress: function(){
+                return this.company+""+this.city+""+this.state ;
+            }
+        }
+        var address={
+            company:"Briarinteractive.in",
+            city:"Noida",
+            state:"UP",
+        }
+        document.writeln(empaddress.fullAddress.call(address));
+        document.writeln(empaddress.fullAddress.apply(address));
+    </script>
+</body>
+</html>

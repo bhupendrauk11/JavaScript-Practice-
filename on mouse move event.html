@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function a(e){
+        x=e.clientx;
+        y=e.clienty;
+        coor="coordinates:("+x+","+y+")";
+        document.getElementById("demo").innerHTML=coor;
+    }
+    function clearcoor(){
+        document.getElementById("demo").innerHTML="";
+    }
+</script>
+<body style="margin: 0px;">
+    <div id="coordiv" style="width: 199px; height: 99px; border: 1px solid black;"
+     onmousemove="a(event)" onmouseout="clearcoor"></d
+     iv>
+    <p>Mouse over ractangle</p>
+    <p id="demo"></p>
+    
+</body>
+</html>

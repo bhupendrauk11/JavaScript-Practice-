@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input id="num1" type="number" value=a placeholder="Enter First Number"/><br>
+        <input id="num2" type="number" value=b placeholder="Enter Second Number"/><br>
+        <button id="btn">Sum</button>  
+        <p id="btn"></p>      
+    </form>
+    <script>
+         a= document.getElementById("num1").value;
+         b= document.getElementById("num2").value;
+        document.getElementById("btn").addEventListener("click",sum);
+        a=parseInt(prompt("Enter Number"));
+        b=parseInt(prompt("Enter Second Number"));
+        function sum(){
+            
+            document.write("Sum of two number :",a+b);
+        }
+      
+    </script>
+</body>
+</html>

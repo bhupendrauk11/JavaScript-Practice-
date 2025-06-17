@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("WELCOME TO SBI BANK");
+        var opt=parseInt(prompt("SELECT OPTION\n 1. WITH\n 2.DEPO\n 3.CHANGE PIN"));
+        opin=1122;
+        bal=20000;
+        if(opt==1){
+            alert("WITHDRAW");
+            pin=parseInt(prompt("ENTER PIN"));
+            if(pin==opin){
+                amt=parseInt(prompt("ENTER AMOUNT")); 
+            if(amt<=bal){
+                alert("Processing...........");
+                bal=bal-amt;
+                document.write("<hr>WITHDRAW SUCCESSFUL");
+                document.write("<hr>WITH AMT :",amt);
+                document.write("<hr>AVL AMT :",bal);
+            }
+            else{
+                document.write("Insufficient Balance");
+        
+            }
+        }
+        else{
+            document.write("wrong pin")
+
+        }
+        }
+        else if(opt==2){
+            alert("Deposit Amt");
+            amt=parseInt(prompt("Enter Amount"));
+            pin=parseInt(prompt("Enter Pin"));
+            if(pin==opin){
+                alert("Processing...............");
+                bal=bal+amt;
+                document.write("<hr>DEPOSIT SUCCESFULL<br>");
+                document.write("Deposit Amount :",amt);
+                document.write("<br>Total Amount :",bal);
+
+            }else{
+                alert("WRONG PIN\n Please Check Pin Again");
+            }
+        }
+else if(opt==3){
+    alert("Change Your Pin");
+    oldpin=parseInt(prompt("Enter Your Old Pin"));
+    if(oldpin==opin){
+        npin=parseInt(prompt("Enter New Pin"));
+        cpin=parseInt(prompt("Confirm New Pin"));
+        if(npin==cpin){
+            alert("PIN CHANGED SUCCESSFULLY______");
+            document.write("<hr>OLD PIN :",opin);
+            document.write("<br> NEW PIN :",cpin);
+
+        }else{
+            alert("Pin Not Matched\n Please Check Carefully");
+        }
+
+    }else{
+        alert("Old Pin Not Match\n Please Check Again");
+    }
+
+}
+    </script>
+</body>
+</html>

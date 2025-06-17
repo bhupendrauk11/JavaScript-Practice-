@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #a{
+            color: red;
+            size: 30px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Enter First No: <input type="text" id="a" name="a"/><br>
+        Enter Second No: <input type="text" id="b" name="b"/><br>
+        <input type="button" value="sum" onclick="sum()"/>
+     </form>
+ <script>
+        function sum(){
+            var a=parseInt(document.getElementById("a").value);
+            var b=parseInt( document.getElementById("b").value);
+            document.write("The sum is : "+ (a+b)+'<br>');
+            document.write("The sub is : "+ (a-b)+'<br>'); 
+            document.write("The mul is : "+ a*b+'<br>');
+            document.write("The div is : "+ a/b);
+        }
+</script>
+</body>
+</html>
+

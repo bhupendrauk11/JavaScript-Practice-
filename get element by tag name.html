@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function counttag(){
+            var total=document.getElementsByTagName("p");
+            alert("Total p tags are :"+total.length);
+        }
+    </script>
+    <p>This is para</p>
+    <p>Hiii</p>
+    <p>Hello</p>
+    <button onclick="counttag()"> count p</button>
+
+    <br>
+    <script>
+        function tag(){
+            var a=document.getElementsByTagName("h1")[0].style.color="red";
+            var i=getElementsByTagName("h2");
+            i[1].style.color="green";
+        }
+    </script>
+     <h1>This is para</h1>
+     <h2>Hiii</h2>
+     <h1>Hello</h1>
+     <button onclick="tag()"> Change Color</button>
+</body>
+</html>

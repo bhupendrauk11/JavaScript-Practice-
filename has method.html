@@ -1,0 +1,9 @@
+<script>
+    const empData=new WeakMap();
+    const emp1={id:1,name:"John"};
+    const emp2={id:2,name:"Smith"};
+    empData.set(emp1,{age:20,salary:30000});
+    empData.set(emp2,{age:30,salary:50000});
+    console.log(empData.has(emp1));
+    console.log(empData.has(emp2));
+</script>

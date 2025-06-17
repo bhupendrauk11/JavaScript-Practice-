@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const employees=new WeakMap();
+        const emp1={name:'Raja',age:25};
+        const emp2={name:'Mahima',age:30};
+        const emp3={name:"Shivsm",age:24};
+        employees.set(emp1,'Employee 1');
+        employees.set(emp2,'Employee 2');
+        employees.set(emp3,'Employee 3');
+        employees.delete(emp2);
+        console.log(employees.get(emp1));
+        console.log(employees.get(emp2));
+        console.log(employees.get(emp3));
+
+    </script>
+</body>
+</html>

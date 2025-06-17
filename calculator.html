@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        opt=parseInt(prompt("SELECT OPTION\n 1.ADD\n 2.SUB\n 3.MUL\n 4.DIv\n 5.EVEN/ODD"));
+        switch(opt){
+           case 1:
+            n1=parseInt(prompt("Enter First Number"));
+            n2=parseInt(prompt("Enter Second Number"));
+            res=n1+n2;
+            document.write("ADDITION is :",res);
+            break;            
+            case 2:
+            n1=parseInt(prompt("Enter First Number"));
+            n2=parseInt(prompt("Enter Second Number"));
+            res=n1-n2;
+            document.write("SUBTRACTION is :",res);
+            break;
+            case 3:
+            n1=parseInt(prompt("Enter First Number"));
+            n2=parseInt(prompt("Enter Second Number"));
+            res=n1*n2;
+            document.write("MULTIPLICATION is :",res);
+            break;
+            case 4:
+            n1=parseInt(prompt("Enter First Number"));
+            n2=parseInt(prompt("Enter Second Number"));
+            res=n1/n2;
+            document.write("DIVISION is :",res);
+            break;
+            case 5:
+                num=parseInt(prompt("Enter Number"));
+                if(num%2==0){
+                    document.write(num,"is Even");
+                }
+                else{
+                    document.write(num,"is Odd");
+                }
+                break;
+            default:
+                document.write("INVALID OPTION");
+            }
+
+            
+
+        
+        
+    </script>
+</body>
+</html>

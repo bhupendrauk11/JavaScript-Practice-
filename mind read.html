@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            height: 50%;
+            width: 30%;
+            margin: 5%;
+            padding: 30px;
+            background-color: aqua;
+            background-image: url("hacker.jpg");
+            background-size: 500px;
+            background-repeat: no-repeat;
+            
+
+        }
+       h4{
+        text-align: left;
+        font-size: 40px;
+        color: red;
+
+       }
+       button{
+        text-align: left;
+        font-size: 15px;
+        color: navy;
+        background-color: aquamarine;
+       }
+       button:hover{
+        color: darkred;
+        transition: ease-in;
+        box-shadow: 5px darkred;
+        font-size: 22px;
+       }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Reader</title>
+</head>
+<body>
+    <div>
+    <h4>Mind Reader</h4>
+    <form action="" name="myform">
+    <button onclick="a()">Read My Mind</button>
+</form>
+    <script>
+        function a(){
+            n=parseInt(prompt("Think Number between 1 to 10"));
+            if(n<=10){
+                alert("Scanning your mind.........."+"<hr>"+" Press Enter");
+                alert("Possible Probabiliy.........."+"<br> Press Enter");
+                document.write("Successfully read your Mind"+"<br>"+"You are Thinking the Number :"+n);
+            }
+            else{
+                document.write("You Choose Above Than 10");
+            }
+        }
+    </script>
+</div>
+</body>
+</html>

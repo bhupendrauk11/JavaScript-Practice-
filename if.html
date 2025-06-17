@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        name=prompt("Enter Name");
+        rn=prompt("Enter Roll No.");
+        hindi=parseInt(prompt("Enter Number"));
+        English=parseInt(prompt("Enter Number"));
+        math=parseInt(prompt("Enter Number"));
+        physics=parseInt(prompt("Enter Number"));
+        chemestry=parseInt(prompt("Enter Number"));
+        total=hindi+English+math+physics+chemestry;
+        avg=total/5;
+        if(avg<33){
+            document.write("Name: ",name,"<br> Roll No:",rn);
+            document.write(" <hr> Toatl Marks:",total,"<br> Average:",avg);
+            document.write("<hr>Result: Fail");
+        }
+        else if(avg<55){
+            document.write("Name: ",name,"<br> Roll No:",rn);
+            document.write(" <hr> Toatl Marks:",total,"<br> Average:",avg);
+            document.write("<hr>Result: Pass","<br>Grade: C");
+        }
+        else if(avg<75){
+            document.write("Name: ",name,"<br> Roll No:",rn);
+            document.write(" <hr> Toatl Marks:",total,"<br> Average:",avg);
+            document.write("<hr>Result: Pass","<br>Grade: B");
+        }
+        else if(avg<55){
+            document.write("Name: ",name,"<br> Roll No:",rn);
+            document.write(" <hr> Toatl Marks:",total,"<br> Average:",avg);
+            document.write("<hr>Result: Pass","<br>Grade: A++");
+        }
+        
+
+    </script>
+</body>
+</html>
